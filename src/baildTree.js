@@ -1,4 +1,4 @@
-import _ from "lodash";
+import _ from 'lodash';
 
 const baildTree = (data1, data2) => {
   const commonKeys = _.union(_.keys(data1), _.keys(data2));
@@ -13,12 +13,12 @@ const baildTree = (data1, data2) => {
       if (!_.has(data2, key)) {
         return { name: key, type: 'removed', value: data1[key] };
       }
-      
+
       if ((data1[key] !== data2[key])) {
         return {
           name: key,
           type: 'changed',
-          firstValue: data1[key] ,
+          firstValue: data1[key],
           secondValue: data2[key],
         };
       }
