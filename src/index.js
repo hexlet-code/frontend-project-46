@@ -3,7 +3,11 @@ import baildTree from './baildTree.js';
 import makeParse from './formatters/index.js';
 import parser from './parser.js';
 
-export default (filepath1, filepath2, format = 'stylish') => {
+const getAbsolutePath = (filePath) => path.resolve(process.cwd(), filePath).trim();
+
+export default (path1, path2, format = 'stylish') => {
+  const filepath1 = getAbsolutePath(path1);
+  const filepath2 = getAbsolutePath(path2);
   const file1Parser = parser(filepath1);
   const file2Parser = parser(filepath2);
 
