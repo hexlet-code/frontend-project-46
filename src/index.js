@@ -1,6 +1,6 @@
 import fs from 'fs';
 import baildTree from './baildTree.js';
-import makeParse from './formatters/index.js'
+import makeParse from './formatters/index.js';
 import parser from './parser.js';
 
 export default (filepath1, filepath2, format = 'stylish') => {

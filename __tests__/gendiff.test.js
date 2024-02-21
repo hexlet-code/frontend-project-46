@@ -15,10 +15,10 @@ test('stylish', () => {
   expect(result1).toBe(stylish);
 });
 test('plain', () => {
-    const result2 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'format');
-    expect(result2).toBe(plain);
-  });
-  test('json', () => {
-    const result3 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'json');
-    expect(result3).toBe(json);
-  });
+  const result2 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'format');
+  expect(result2).toBe(plain);
+});
+test('json', () => {
+  const result3 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'json');
+  expect(result3).toBe(json);
+});
