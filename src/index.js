@@ -2,8 +2,9 @@ import fs from 'fs';
 import baildTree from './baildTree.js';
 import makeParse from './formatters/index.js';
 import parser from './parser.js';
+import path from 'path';
 
-const getAbsolutePath = (filePath) => path.resolve(process.cwd(), filePath).trim();
+const getAbsolutePath = (filePath) => path.resolve(process.cwd() ,filePath);
 
 export default (path1, path2, format = 'stylish') => {
   const filepath1 = getAbsolutePath(path1);
