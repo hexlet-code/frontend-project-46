@@ -10,7 +10,7 @@ program
   .description('Compares two configuration files and shows a difference.')
   .arguments('<filepath1>')
   .arguments('<filepath2>')
-  .option('-f, --format <type>', 'output format','stylish')
+  .option('-f, --format <type>', 'output format', 'stylish')
   .helpOption('-h, --help', 'output usage information')
   .action((filepath1, filepath2, option) => {
     const res = gendiff(filepath1, filepath2, option.format);
