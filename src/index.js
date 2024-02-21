@@ -1,6 +1,6 @@
 import fs from 'fs';
 import baildTree from './baildTree.js';
-import getParsing from './parsing/getParsing.js';
+import makeParse from './formatters/index.js'
 import parser from './parser.js';
 
 export default (filepath1, filepath2, format = 'stylish') => {
@@ -11,5 +11,5 @@ export default (filepath1, filepath2, format = 'stylish') => {
   const file2 = file2Parser(fs.readFileSync(filepath2, 'utf-8'));
 
   const tree = baildTree(file1, file2);
-  return getParsing(tree, format);
+  return makeParse(tree, format);
 };
