@@ -15,7 +15,7 @@ test('stylish', () => {
   expect(result1).toBe(stylish);
 });
 test('plain', () => {
-  const result2 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'format');
+  const result2 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'plain');
   expect(result2).toBe(plain);
 });
 test('json', () => {
