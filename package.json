@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "bin": {
-    "gendiff": "node ./bin/gendiff.js"
+    "gendiff": "bin/gendiff.js"
   },
   "type": "module",
   "author": "",
