@@ -1,4 +1,4 @@
-name: jest
+name: linter & jest
 # Trigger the workflow on push or pull request
 on:
   - push
@@ -31,12 +31,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: test-coverage
+      - name: Install
         # Install project
         run: make install
-      - name: test-coverage
-        # Install project
-        run: make test-coverage
+      - name: Run linter
+        # Run Linter
+        run: make lint
       - name: Run test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
         # Add Code Climate secret key
