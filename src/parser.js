@@ -1,5 +1,5 @@
 import path from 'path';
-import yaml from 'yaml';
+import yaml from 'js-yaml';
 
 export default (file) => {
   const format = path.extname(file);
@@ -7,9 +7,9 @@ export default (file) => {
     case '.json':
       return JSON.parse;
     case '.yml':
-      return yaml.parse;
+      return yaml.load;
     case '.yaml':
-      return yaml.parse;
+      return yaml.load;
     default:
       return 111;
   }
