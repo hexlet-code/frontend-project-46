@@ -11,6 +11,6 @@ export default (tree, format) => {
     case 'json':
       return jsonParse(tree);
     default:
-      throw Error('данный формат вывода не поддерживается');
+      console.log('данный формат вывода не поддерживается');
   }
 };
