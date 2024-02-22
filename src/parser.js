@@ -6,7 +6,7 @@ export default (file) => {
   switch (format) {
     case '.json':
       return JSON.parse;
-    case '.yaml' :
+    case '.yaml':
       return yaml.load;
     case '.yml':
       return yaml.load;
