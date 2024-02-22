@@ -13,8 +13,14 @@ program
   .option('-f, --format <type>', 'output format', 'stylish')
   .helpOption('-h, --help', 'output usage information')
   .action((filepath1, filepath2, option) => {
-    const res = gendiff(filepath1, filepath2, option.format);
-    console.log(res);
+    try {
+      const res = gendiff(filepath1, filepath2, option.format);
+      console.log(res);
+    }
+    catch (err){
+      throw Error(`Не предвиденное поведение функции gendiff ${err}`);
+    }
+    
   });
 
 program.parse();

@@ -6,11 +6,9 @@ export default (file) => {
   switch (format) {
     case '.json':
       return JSON.parse;
-    case '.yml':
-      return yaml.load;
-    case '.yaml':
+    case '.yaml' || '.yml':
       return yaml.load;
     default:
-      return 111;
+      throw Error(`Данный формат ${format} не поддерживается`);
   }
 };
