@@ -13,8 +13,8 @@ program
   .option('-f, --format <type>', 'output format', 'stylish')
   .helpOption('-h, --help', 'output usage information')
   .action((filepath1, filepath2, option) => {
-      const res = gendiff(filepath1, filepath2, option.format);
-      console.log(res);
+    const res = gendiff(filepath1, filepath2, option.format);
+    console.log(res);
   });
 
 program.parse();

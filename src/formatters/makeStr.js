@@ -25,6 +25,6 @@ export default (el, lvl) => {
     case 'unchanged':
       return `  ${el.name}: ${render(el.value, lvl)}`;
     default:
-      throw Error(`Невозможно определить структуру обьекта: ${el}`);
+      return `Невозможно определить структуру обьекта: ${el}`;
   }
 };

@@ -9,6 +9,6 @@ export default (file) => {
     case '.yaml' || '.yml':
       return yaml.load;
     default:
-      console.log(`Данный формат ${format} не поддерживается`);
+      return `Данный формат ${format} не поддерживается`;
   }
 };
