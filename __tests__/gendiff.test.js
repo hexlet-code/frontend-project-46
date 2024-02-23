@@ -22,3 +22,12 @@ test('json', () => {
   const result3 = gendiff('__fixtures__/file1.json', '__fixtures__/file2.json', 'json');
   expect(result3).toBe(json);
 });
+
+// test('test', () => {
+//   format.forEach((fm) => {
+//     paths.forEach((pth) => {
+//       const result = gendiff(`__fixtures__/file1.${pth}`, `__fixtures__/file2.${pth}`, fm);
+//       expect(result).toBe(fs.readFileSync(getFixturePath(`${fm}.txt`), 'utf-8'));
+//     });
+//   });
+// });
