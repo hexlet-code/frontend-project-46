@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/hexlet-code/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/hexlet-code/frontend-project-46/actions)[![Maintainability](https://api.codeclimate.com/v1/badges/4bc34c743a75187d784c/maintainability)](https://codeclimate.com/github/hexlet-code/frontend-project-45/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/4bc34c743a75187d784c/test_coverage)](https://codeclimate.com/github/hexlet-code/frontend-project-45/test_coverage)
+[![Actions Status](https://github.com/hexlet-code/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/hexlet-code/frontend-project-46/actions)  [![Maintainability](https://api.codeclimate.com/v1/badges/4bc34c743a75187d784c/maintainability)](https://codeclimate.com/github/hexlet-code/frontend-project-45/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/4bc34c743a75187d784c/test_coverage)]  (https://codeclimate.com/github/hexlet-code/frontend-project-45/test_coverage)
 
 
 
@@ -26,4 +26,7 @@ Options: -V, --version output the version number -f, --format [type] Output form
 [type] - plain, json, nested - путь к json или yaml файлам
 
 Примеры
-https://asciinema.org/a/JxYhEmRR5IpxuzF84QnJJjJtk - flat json/yml https://asciinema.org/a/6ujXPV6nAvU09vjLF3zj4vcgX - nested json/yml https://asciinema.org/a/c3GJd0azHzWUBw6Ju57xYfqcm - plain json/yml https://asciinema.org/a/bvI0TJWbLXceG45PAJkQPTtaZ - json json/yml
+https://asciinema.org/a/JxYhEmRR5IpxuzF84QnJJjJtk - flat json/yml 
+https://asciinema.org/a/6ujXPV6nAvU09vjLF3zj4vcgX - nested json/yml
+https://asciinema.org/a/c3GJd0azHzWUBw6Ju57xYfqcm - plain json/yml 
+https://asciinema.org/a/bvI0TJWbLXceG45PAJkQPTtaZ - json json/yml
